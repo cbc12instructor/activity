@@ -2,6 +2,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     /* we want to actually pick our product font soon */
+    
 }
 
 h1,h2,h3,h4,h5,h6 { 
@@ -41,7 +42,7 @@ section#tracker {
 
 section#tracker h2 {
     text-align: center;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 footer {

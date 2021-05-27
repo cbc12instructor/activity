@@ -7,22 +7,11 @@
         <title>My Fitness Tracker</title>
 
         <link rel="stylesheet" href="/css/activity.css">
-
-        <script>
-            console.log('Hello, my activity tracker has loaded.');
-
-            var name = 'Eric';
-            for ( var i = 0; i <= 10; i++ ) {
-                console.log('i is currently set to ' + (i+1));
-            }
-
-            document.getElementById('tracker').innerHTML = '<h2>Hello</h2>';
-        </script>
     </head>
     <body>
         
         <header>
-            <h1 style="color:#ccc;">My Fitness Tracker</h1>
+            <h1>My Fitness Tracker</h1>
         </header>
 
         <section id="main">
@@ -36,20 +25,21 @@
             </nav>
 
             <section id="tracker">
-                <h2>Activity Tracker</h2>
+                <h2>Contact Us</h2>
 
-                <input type="text" id="add_activity" name="add_activity">
-                <input type="submit" value="Track Exercise">
+                <form action="/contact.html" method="get">
+                    <label for="email_address">Email Address:</label>
+                    <input type="email" id="email_address" name="email_address">
+            
+                    <h1 id="test">What is your <div>favorite</div> color?</h1>
 
-                <hr>
+                    <br><br>
+                    
+                    <textarea name="message" id="message" cols="70" rows="10" placeholder="Tell us what you think."></textarea>
 
-                <div id="activity_log">
-                    <ul>
-                        <li>Ran 20 miles</li>
-                        <li>Squatted 145lbs 10x</li>
-                    </ul>
-
-                </div>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </form>
 
             </section>
 
@@ -58,6 +48,6 @@
         <footer>
             Footer (copyright me!) - <a href="/contact.html">Contact Us</a>
         </footer>
-        
+
     </body>
 </html>
