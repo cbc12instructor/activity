@@ -13,6 +13,13 @@ body {
     color: #eee;
 }
 
+a {
+    color:rgb(182, 255, 255);
+}
+a:visited {
+    color:rgb(254, 255, 211);
+}
+
 nav {
     
     width: 20%;
