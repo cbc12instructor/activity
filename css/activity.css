@@ -40,6 +40,14 @@ section#tracker {
     margin-bottom: 1rem;
 }
 
+/*
+Example of using an image for a list item
+#activity_log li {
+    list-style-type: none;
+    list-style-image: url('/images/flower.png');
+}
+*/
+
 section#tracker h2 {
     text-align: center;
     /*margin-bottom: 5px;*/
