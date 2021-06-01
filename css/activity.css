@@ -66,12 +66,3 @@ footer {
 	clear: both;
 }
 
-@media screen and ( min-width: 500px ) and ( max-width: 1024px ) {
-
-	body {
-		background-color: green;	
-		font-size: .5rem;
-	}
-	
-
-}
