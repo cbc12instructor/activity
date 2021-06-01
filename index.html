@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Fitness Tracker - FitWizard</title>
 
-		<link rel="stylesheet" href="/css/activity.css">
+		<link rel="stylesheet" href="/css/activity.css" media="all">
+		<link rel="stylesheet" href="/css/print.css" media="print">
 
 		<script>
 			console.log('Hello, my activity tracker has loaded.');
@@ -43,6 +44,19 @@
 
 				<hr>
 
+				<div>
+					<p>This should be yellow</p>
+					<p>This is also yellow</p>
+					<span> 
+						<p>
+							This is not yellow
+						</p>
+					</span>
+					<p>Also yellow</p>
+				</div>
+
+				<p>This should be white</p>
+
 				<div id="activity_log">
 					<ul>
 						<li>Ran 20 miles</li>
@@ -55,6 +69,12 @@
 						<li>Squatted 145lbs 10x</li>
 						<li>Squatted 145lbs 10x</li>
 						<li>Squatted 145lbs 10x</li>
+					</ul>
+
+					<p>Second list below</p>
+
+					<ul>
+						<li>I am in list 2</li>
 					</ul>
 
 				</div>

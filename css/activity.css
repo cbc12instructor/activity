@@ -1,4 +1,8 @@
 
+html {
+	font-size: 16px;
+}
+
 * {
 	font-family: Arial, Helvetica, sans-serif;
 	/* we want to actually pick our product font soon */
@@ -9,10 +13,13 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 
+
 body {
 	background-color: rgb(24, 15, 15);
 	color: #eee;
 }
+
+
 
 a {
 	color:rgb(182, 255, 255);
@@ -57,4 +64,14 @@ footer {
 	
 	border-top: 1px solid #ccc;
 	clear: both;
+}
+
+@media screen and ( min-width: 500px ) and ( max-width: 1024px ) {
+
+	body {
+		background-color: green;	
+		font-size: .5rem;
+	}
+	
+
 }
