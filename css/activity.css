@@ -13,56 +13,57 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 
+menu ul  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	background-color: rgb(24, 15, 15);
-	color: #eee;
+	background-color: #333;
+	color: #ddd;
+	margin: 0;
 }
-
-
 
 a {
-	color:rgb(182, 255, 255);
+	color:rgb(17, 120, 255);
 }
 a:visited {
-	color:rgb(254, 255, 211);
+	color:rgb(72, 179, 241);
 }
 
-nav {
-	
-	width: 20%;
-	float: left;
-	min-width: 160px;
-	margin-right: 1rem;
-	margin-bottom: 1rem;
+header, section, footer, nav {
+	/*border: 1px solid green;*/
 }
 
-section#tracker {
-	width: 60%;
-	
-	float: left;
-	
-	padding: 5px;
-
-	margin-bottom: 1rem;
+header {
+	grid-area: header;
+	height: 10vh;
+	background-color: mediumseagreen;
+	color: #fff;
+	padding: 10px;
+	font-size: 1.5rem;
 }
 
-/*
-Example of using an image for a list item
-#activity_log li {
-	list-style-type: none;
-	list-style-image: url('/images/flower.png');
+menu {
+	grid-area: menu;
 }
-*/
 
-section#tracker h2 {
-	text-align: center;
-	/*margin-bottom: 5px;*/
+section#app {
+	grid-area: main;
+	margin: 0 50px;
 }
 
 footer {
-	
-	border-top: 1px solid #ccc;
-	clear: both;
+	grid-area: footer;
 }
 
+#grid-container {
+	display: grid;
+	grid-template-areas: 
+		'header header header'
+		'menu main main'
+		'footer footer footer';
+	grid-template-columns: 150px auto auto;
+	grid-gap: 10px;
+}

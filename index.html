@@ -4,88 +4,56 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>My Fitness Tracker - FitWizard</title>
+		<title>FitWizard</title>
 
 		<link rel="stylesheet" href="/css/activity.css" media="all">
 		<link rel="stylesheet" href="/css/print.css" media="print">
 
-		<script>
-			console.log('Hello, my activity tracker has loaded.');
+		<link id="favicon" rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" href="/images/favicon-16.png" type="image/png" sizes="16x16">
+		<link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
 
-			var name = 'Eric';
-			for ( var i = 0; i <= 10; i++ ) {
-				console.log('i is currently set to ' + (i+1));
-			}
 
-			document.getElementById('tracker').innerHTML = '<h2>Hello</h2>';
-		</script>
+		<script src="/js/activity.js" defer></script>
+
+		<!--[if lt IE 9]>
+			<scZAript src="bower_components/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		
-		<header>
-			<h1 style="color:#ccc;">FitWizard</h1>
-		</header>
-
-		<section id="main">
+		<div id="grid-container">
 			
-			<nav>
-				<ul>
-					<li>Activity Tracker</li>
-					<li><a href="/weight.html">Weight Tracker</a></li>
-					<li><a href="/food.html">Food Log</a></li>
+			<header role="banner">
+				<h1 style="">FitWizard</h1>
+			</header>
+
+			
+				
+			<menu role="navigation">
+				<ul id="mainMenu">
+					<li><a href="#activity">Activity Tracker</a></li>
+					<li><a href="#weight">Weight Tracker</a></li>
+					<li><a href="#food">Food Log</a></li>
 				</ul>
-			</nav>
+			</menu>
 
-			<section id="tracker">
-				<h2>Activity Tracker</h2>
+			<article>
+			</article>
 
-				<input type="text" id="add_activity" name="add_activity">
-				<input type="submit" value="Track Exercise">
+			
 
-				<hr>
-
-				<div>
-					<p>This should be yellow</p>
-					<p>This is also yellow</p>
-					<span> 
-						<p>
-							This is not yellow
-						</p>
-					</span>
-					<p>Also yellow</p>
-				</div>
-
-				<p>This should be white</p>
-
-				<div id="activity_log">
-					<ul>
-						<li>Ran 20 miles</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-						<li>Squatted 145lbs 10x</li>
-					</ul>
-
-					<p>Second list below</p>
-
-					<ul>
-						<li>I am in list 2</li>
-					</ul>
-
-				</div>
+			<section id="app" role="main">
 
 			</section>
 
-		</section>
 
-		<footer>
-			Footer (copyright me!) - <a href="/contact.html">Contact Us</a>
-		</footer>
+
+			<footer>
+				Footer (copyright me!) - <a href="/contact.html">Contact Us</a>
+			</footer>
+		
+		</div>
 		
 	</body>
 </html>
